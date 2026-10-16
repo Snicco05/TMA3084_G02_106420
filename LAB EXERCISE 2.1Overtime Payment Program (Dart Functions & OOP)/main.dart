@@ -2,7 +2,7 @@ import 'myLib.dart' as emp;
 
 void main(){
   double extraPayPerHr;
-  var nicco= emp.Employee('Manager', 'Malaysia', 5000,7);
+  var nicco= emp.Employee('Manager', 'Ecuador', 5000,7);
 
   if(nicco.salary >= 4000){
     extraPayPerHr = 10;
@@ -11,6 +11,7 @@ void main(){
     extraPayPerHr=20;
   }
 
-  double total = nicco.salary + (nicco.overtimeHr * extraPayPerHr);
-  print('Total Salary = \$$total USD');
+  double overtimePay = nicco.overtimeHr * extraPayPerHr;
+  double totalSalary = nicco.salary +  overtimePay;
+  print('Total Salary = \$$totalSalary USD');
 }

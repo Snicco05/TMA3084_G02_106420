@@ -1,8 +1,8 @@
 class Employee{
   late String jobTitle;
-  late String location;
+  late String country;
   late double salary;
   late double overtimeHr;
 
-  Employee(this.jobTitle, this.location, this.salary, this.overtimeHr);
+  Employee(this.jobTitle, this.country, this.salary, this.overtimeHr);
 }
